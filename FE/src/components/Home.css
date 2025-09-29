@@ -1,0 +1,158 @@
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+ 
+ }
+ .nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ 
+ }
+ 
+ .ai-image{
+     margin-top: 20px;
+     margin-right: 20px;
+     border-radius: 40px;
+     
+ }
+ 
+ 
+ .ai-verse{
+     padding: 20px;
+     font-size: 56px;
+     font-weight: 500;
+     background: -webkit-linear-gradient(16deg , #4b90ff ,#ff5546);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .main-container{
+    max-width: 900px;
+    margin:auto;
+} 
+
+.main .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.main .cards{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(180px , 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+ 
+.main-bottom{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+  
+}
+ 
+.search-box img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size:18px ;   
+}
+
+.search-box div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+.main .bottom-info span{
+    font-size: 24px;
+    background: -webkit-linear-gradient(16deg , #4b90ff ,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.result-title {
+    margin: 40px 0px ;
+    display: flex;
+    align-items:center ;
+    gap: 20px;
+} 
+
+.result img{
+    width: 100px;
+    border-radius: 30%;
+}
+
+.result-data img{
+    width: 50px;
+}
+
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@media ( max-width :600px){
+    .main-bottom input{
+        flex: none;
+        width: 150px;
+    }
+
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        padding: 5px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+}
