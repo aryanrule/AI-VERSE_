@@ -26,10 +26,10 @@ const ContextProvider = (props) => {
     setLoading(true);
     setShowResult(true);
     setRecentPrompt(input);
-
+    const newInput = input;
     //adding sidebar saving
-    setPreviousPrompt((prev) => [...prev, input]);
-
+    setPreviousPrompt((prev) => [...prev, newInput]);  
+    setInput("");
     try {
       
       const response = await fetch("http://localhost:3000/api/getdata", {
@@ -37,7 +37,7 @@ const ContextProvider = (props) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ prompt: input }), // <-- convert object to JSON string
+        body: JSON.stringify({ prompt: newInput }), // <-- convert object to JSON string
       });
       const data = await response.json();
       console.log(data);  
