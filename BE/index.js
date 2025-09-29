@@ -75,7 +75,7 @@ app.post("/api/getdata", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-app.get("/dashboard", (req, res) => {
+app.get("/", (req, res) => {
     res.send("<h1>I am onnnn</h1>");
 });
 
