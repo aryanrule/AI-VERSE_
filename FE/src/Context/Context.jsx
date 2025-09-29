@@ -32,7 +32,7 @@ const ContextProvider = (props) => {
     setInput("");
     try {
       
-      const response = await fetch("http://localhost:3000/api/getdata", {
+      const response = await fetch("https://ai-verse-xnf4.onrender.com/api/getdata", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 4000;
 
 const allowedOrigin = [
   "http://localhost:5173" , // dev
+  "https://ai-verse-74se.vercel.app/"  , // prod  
 ]
 
 
